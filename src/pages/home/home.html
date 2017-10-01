@@ -8,11 +8,93 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <div class="bar bar-subheader ">
+    <h1 class="title" align="Center">Welcome to Northwest Missouri State University</h1>
+  </div>
+  <div>
+    <h1 >Calculate Tution Fee</h1>
+  </div>
 
   <button ion-button secondary menuToggle>Toggle Menu</button>
-</ion-content>
+
+  <ion-list radio-group>
+    <ion-list-header>
+     <h3>Northwest Location</h3>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Maryville</ion-label>
+      <ion-radio checked="true" value="go"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Kansas</ion-label>
+      <ion-radio value="rust"></ion-radio>
+    </ion-item>
+  </ion-list>
+  
+  <ion-list radio-group>
+    <ion-list-header>
+     <h3>Type of student</h3>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Graduate</ion-label>
+      <ion-radio checked="true" value="go"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Undergraduate</ion-label>
+      <ion-radio value="rust"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+  <ion-item>
+    <ion-label>Residency</ion-label>
+    <ion-select>
+      <ion-option value="nes">In-state</ion-option>
+      <ion-option value="n64">Out-of-State</ion-option>
+      <ion-option value="ps">International</ion-option>
+     
+    </ion-select>
+  </ion-item>
+  
+    <div>
+    <h1 >Estimated Aid Received</h1>
+  </div>
+  
+ 
+  
+  <ion-list>
+
+  <ion-item>
+    <ion-label floating>Grants: $</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Scholorship: $</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  
+   <ion-item>
+    <ion-label floating>Student Loans: $</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Parent PLUS: $</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  
+   <ion-item>
+    <ion-label floating>Other Financial Aid: $</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<button ion-button block>Submit</button>
+  <ion-content>
